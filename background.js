@@ -1,3 +1,7 @@
+browser.runtime.onInstalled.addListener(function() {
+  browser.runtime.openOptionsPage()
+})
+
 var env = []
 
 function loadEnv() {
