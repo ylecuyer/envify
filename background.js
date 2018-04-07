@@ -1,8 +1,29 @@
-const envs = [
-  { match: "*.local.dimelo.info", color: "#0000FF" }, //blue
-  { match: "*.dimelo.info", color: "#FFFF00" }, //green
-  { match: "*.dimelo.com", color: "#FF0000" }, //red
-]
+var env = []
+
+function loadEnv() {
+
+	browser.storage.local.get("environments")
+	.then(function(results){
+    env = []
+		let { environments } = results;
+		Object.keys(environments).map(function(value){
+			env.push( { match: value, color: environments[value] });
+		});
+
+    env.sort(function(a, b) {
+      return a.match.length - b.match.length
+    }).reverse()
+	})
+  
+}
+
+loadEnv()
+
+browser.runtime.onMessage.addListener(function(message, sender) {
+  if (message.event == "updated") {
+    loadEnv()
+  }
+})
 
 function matchRule(str, rule) {
   return new RegExp(rule.split("*").join(".*")).test(str);
@@ -11,7 +32,7 @@ function matchRule(str, rule) {
 function getColorFromUrl(url) {
   var color = null
 
-  envs.forEach(function(env) {
+  env.forEach(function(env) {
     if (matchRule(url, env.match)) {
       color = env.color 
     }
