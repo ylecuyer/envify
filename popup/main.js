@@ -2,7 +2,7 @@ let listEnvironments = document.querySelector(".list-environments")
 let btnAddEnv = document.getElementById("btn-add-env");
 
 let addEnvironment = function(url, color){
-	let environmentStr =`<input type="text" placeholder="*.dev.example.com" value="${ url || ''}"><input type="color" value="${ color || randomDefaultColor() }"><button class="btn-remove">Remove</button>`;
+	let environmentStr =`<input type="text" placeholder="*.dev.example.com" value="${ url || ''}"><input type="text" class="color" value="${ color || randomDefaultColor() }"><button class="btn-remove">Remove</button>`;
 	let environmentNode =  document.createElement("section");
 	environmentNode.classList.add("environment");
 	environmentNode.innerHTML = environmentStr;
@@ -30,7 +30,7 @@ let updateEnvironments = function(){
 		if(!url){
 			continue;
 		}
-		environments[url] = el.querySelector("input[type=color]").value;
+		environments[url] = el.querySelector(".color").value;
 	}
 	browser.storage.local.set({"environments": environments}).catch(function(err){
 		btnAddEnv.setCustomValidity("Could not save your environments");
