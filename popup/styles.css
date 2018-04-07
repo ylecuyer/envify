@@ -1,0 +1,37 @@
+body {
+	background-color: #34495e;
+	color: #ecf0f1;
+	box-sizing: border-box;
+}
+
+* {
+	box-sizing: inherit;
+}
+
+h1 {
+	font-family: monospace;
+	text-align: center;
+}
+
+.environments_list {
+	border: 1px dotted #2ecc71;
+	padding: 20px;
+}
+
+.environment {
+	display: flex;
+	height: ;
+	justify-content: center;
+	align-items: center;
+}
+
+input[type="color"] {
+	border: none;
+	background-color: white;
+	border: 0px;
+}
+
+input[type="text"] {
+	height: inherit;
+	border:  none;
+}

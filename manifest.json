@@ -10,8 +10,15 @@
   },
 
   "permissions": [
-    "theme"
+    "tabs",
+    "storage"
   ],
+
+  "browser_action":{
+    "default_icon": "icons/border-48.png",
+    "default_title": "Envify",
+    "default_popup": "popup/manage_env.html"
+  },
 
   "background": {
     "scripts": [
