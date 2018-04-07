@@ -7,7 +7,7 @@ let addEnvironment = function(url, color){
 	environmentNode.classList.add("environment");
 	environmentNode.innerHTML = environmentStr;
 	environmentNode.querySelector(".btn-remove").addEventListener("click", removeEnvironment.bind(environmentNode), false);
-	environmentNode.querySelector('input[type="color"').addEventListener("change", updateEnvironments, false);
+	environmentNode.querySelector('input[type="color"]').addEventListener("change", updateEnvironments, false);
 	environmentNode.querySelector("input").addEventListener("input", updateEnvironments, false);
 
 	listEnvironments.appendChild(environmentNode);
