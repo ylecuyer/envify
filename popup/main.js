@@ -2,26 +2,38 @@ let listEnvironments = document.querySelector(".list-environments")
 let btnAddEnv = document.getElementById("btn-add-env");
 
 let addEnvironment = function(url, color){
-	let environmentStr =`<input type="color" value="${ color || randomDefaultColor() }"><input type="text" placeholder="*.dev.example.com" value="${ url || ''}"><button class="btn-remove">Remove</button>`;
 	let environmentNode =  document.createElement("section");
 	environmentNode.classList.add("environment");
-	environmentNode.innerHTML = environmentStr;
-	environmentNode.querySelector(".btn-remove").addEventListener("click", removeEnvironment.bind(environmentNode), false);
-	environmentNode.querySelector('input[type="color"]').addEventListener("change", updateEnvironments, false);
-	environmentNode.querySelector("input").addEventListener("input", updateEnvironments, false);
+
+	let envColor = document.createElement("input");
+	envColor.type = "color";
+	envColor.value = color || randomDefaultColor();
+	envColor.addEventListener("change", updateEnvironments, false);
+	environmentNode.appendChild(envColor);
+	
+	let envDomain = document.createElement("input");
+	envDomain.placeholder = "*.dev.example.com";
+	envDomain.value = url || "";
+	envDomain.addEventListener("input", updateEnvironments, false);
+	environmentNode.appendChild(envDomain);
+
+	let envRemove = document.createElement("button");
+	envRemove.className = "btn-remove";
+	envRemove.textContent = "Remove";
+	envRemove.addEventListener("click", () => removeEnvironment(environmentNode), false);
+	environmentNode.appendChild(envRemove);
 
 	listEnvironments.appendChild(environmentNode);
 }
 
 let randomDefaultColor = function(){
 	let flatColors = [ "#0a84ff", "#00feff", "#ff1ad9", "#30e60b", "#ffe900", "#ff0039", "#9400ff", "#ff9400", "#363959", "#737373"];
-	return flatColors[ Math.floor(Math.random() * flatColors.length)]
+	return flatColors[ Math.floor(Math.random() * flatColors.length)];
 }
 
-let removeEnvironment = function(){
-	let section = this;
-	section.parentElement.removeChild(section);
-	updateEnvironments()
+let removeEnvironment = function(section){
+	section.remove();
+	updateEnvironments();
 }
 
 let updateEnvironments = function(){
