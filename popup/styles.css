@@ -1,7 +1,16 @@
+html, body {
+	height:  100%;
+	margin: 0;
+}
+
 body {
-	background-color: #34495e;
+	padding: 20px;
+	background: linear-gradient(#34495e, #2c3e50);
 	color: #ecf0f1;
 	box-sizing: border-box;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
 * {
@@ -9,29 +18,45 @@ body {
 }
 
 h1 {
-	font-family: monospace;
+	font-family: 'Courier', monospace;
 	text-align: center;
 }
 
-.environments_list {
-	border: 1px dotted #2ecc71;
-	padding: 20px;
+#btn-add-env {
+	height: 10%;
+	font-weight: bolder;
+	font-family: 'Courier', monospace;
+	margin-bottom: 7px;
+}
+
+.list-environments {
+	width: 100%;
+	margin: 0 auto;
+	border: 2px dashed #2ecc71;
+	padding: 1%;
 }
 
 .environment {
 	display: flex;
-	height: ;
-	justify-content: center;
-	align-items: center;
+	margin: 5px;
+	justify-content: left;
+	align-items: stretch;
 }
+
 
 input[type="color"] {
 	border: none;
 	background-color: white;
-	border: 0px;
+	padding: 0;
+	min-width: 57px;
+}
+
+input[type="color"]::-moz-color-swatch{
+	border: none;
 }
 
 input[type="text"] {
+	width: 100%;
 	height: inherit;
 	border:  none;
 }
