@@ -15,10 +15,9 @@
     "theme"
   ],
 
-  "browser_action":{
-    "default_icon": "icons/border-48.png",
-    "default_title": "Envify",
-    "default_popup": "popup/manage_env.html"
+  "options_ui":{
+    "page": "popup/manage_env.html",
+    "open_in_tab": true
   },
 
   "background": {
