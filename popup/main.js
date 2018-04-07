@@ -36,8 +36,6 @@ let updateEnvironments = function(){
 		btnAddEnv.setCustomValidity("Could not save your environments");
 		btnAddEnv.reportValidity();
 	});
-	//let sendMessage = browser.runtime.sendMessage({ "event": "updated" })
-
 }
 
 btnAddEnv.addEventListener("click", function(){ addEnvironment(); updateEnvironments()}, false)

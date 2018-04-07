@@ -19,11 +19,7 @@ function loadEnv() {
 
 loadEnv()
 
-browser.runtime.onMessage.addListener(function(message, sender) {
-  if (message.event == "updated") {
-    loadEnv()
-  }
-})
+browser.storage.onChanged.addListener(loadEnv)
 
 function matchRule(str, rule) {
   return new RegExp(rule.split("*").join(".*")).test(str);
