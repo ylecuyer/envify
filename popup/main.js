@@ -12,6 +12,7 @@ let addEnvironment = function(url, color){
 	environmentNode.appendChild(envColor);
 	
 	let envDomain = document.createElement("input");
+	envDomain.type = "text";
 	envDomain.placeholder = "*.dev.example.com";
 	envDomain.value = url || "";
 	envDomain.addEventListener("input", updateEnvironments, false);
