@@ -55,6 +55,9 @@ function setTabColor(tab) {
 
 function generateThemeFromColor(color) {
   return {
+      "images": {
+        "headerURL": ""
+      },
       "colors": {
         "accentcolor": colorLuminance(color, -0.3),
         "textcolor": invertColor(color, true),
