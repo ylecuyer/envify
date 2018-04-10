@@ -1,5 +1,6 @@
 let listEnvironments = document.querySelector(".list-environments")
 let btnAddEnv = document.getElementById("btn-add-env");
+let btnSaveEnv = document.getElementById("btn-save-env");
 
 let addEnvironment = function(url, color){
 	let environmentNode =  document.createElement("section");
@@ -8,14 +9,12 @@ let addEnvironment = function(url, color){
 	let envColor = document.createElement("input");
 	envColor.type = "color";
 	envColor.value = color || randomDefaultColor();
-	envColor.addEventListener("change", updateEnvironments, false);
 	environmentNode.appendChild(envColor);
 	
 	let envDomain = document.createElement("input");
 	envDomain.type = "text";
 	envDomain.placeholder = "*.dev.example.com";
 	envDomain.value = url || "";
-	envDomain.addEventListener("input", updateEnvironments, false);
 	environmentNode.appendChild(envDomain);
 
 	let envRemove = document.createElement("button");
@@ -34,7 +33,6 @@ let randomDefaultColor = function(){
 
 let removeEnvironment = function(section){
 	section.remove();
-	updateEnvironments();
 }
 
 let updateEnvironments = function(){
@@ -52,7 +50,8 @@ let updateEnvironments = function(){
 	});
 }
 
-btnAddEnv.addEventListener("click", function(){ addEnvironment(); updateEnvironments()}, false)
+btnAddEnv.addEventListener("click", function() { addEnvironment() }, false)
+btnSaveEnv.addEventListener("click", updateEnvironments, false)
 
 document.addEventListener("DOMContentLoaded", function(){
 	browser.storage.local.get("environments")
