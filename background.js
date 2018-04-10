@@ -10,6 +10,11 @@ function loadEnv() {
 	.then(function(results){
     env = []
 		let { environments } = results;
+  
+    if (environments == undefined) {
+      return
+    }    
+
 		Object.keys(environments).map(function(value){
 			env.push( { match: value, color: environments[value] });
 		});
