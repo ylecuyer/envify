@@ -21,7 +21,7 @@ function loadEnv() {
 
     env.sort(function(a, b) {
       return a.match.length - b.match.length
-    }).reverse()
+    })
 	})
   
 }
