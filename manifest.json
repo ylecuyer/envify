@@ -6,7 +6,7 @@
   "description": "Colorify tabs with current env",
 
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/envify.svg"
   },
 
   "permissions": [

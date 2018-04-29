@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
+	<defs>
+		<linearGradient id="photonGradient">
+			<stop offset="12%" stop-color="#0a84ff" />
+			<stop offset="42%" stop-color="#9400ff" />
+			<stop offset="88%" stop-color="#ff9400" />
+		</linearGradient>
+	</defs>
+<style type="text/css">
+	.st1{opacity:0.2;}
+	.st2{fill:#737373;}
+	.st3{fill:#EEEEEE;}
+	.st4{fill:url(#photonGradient);}
+	.st5{fill:#ffe900;}
+	.st6{fill:#30e60b;}
+	.st7{fill:#ff0039;}
+	.st8{fill:#4F5D73;}
+</style>
+<g id="Layer_1">
+	<g class="st1">
+		<path class="st2" d="M52,48c0,2.2-1.8,4-4,4H16c-2.2,0-4-1.8-4-4V18c0-2.2,1.8-4,4-4h32c2.2,0,4,1.8,4,4V48z"/>
+	</g>
+	<g>
+		<path class="st3" d="M12,21.5V46c0,2.2,1.8,4,4,4h32c2.2,0,4-1.8,4-4V21.5H12z"/>
+	</g>
+	<g class="st1">
+		<path class="st2" d="M52,18c0-2.2-1.8-4-4-4H16c-2.2,0-4,1.8-4,4v6h40V18z"/>
+	</g>
+	<g>
+		<path class="st4" d="M52,16c0-2.2-1.8-4-4-4H16c-2.2,0-4,1.8-4,4v6h40V16z"/>
+	</g>
+	<g>
+		<circle class="st5" cx="23" cy="17" r="2"/>
+	</g>
+	<g>
+		<circle class="st6" cx="29" cy="17" r="2"/>
+	</g>
+	<g>
+		<circle class="st7" cx="17" cy="17" r="2"/>
+	</g>
+	<g>
+		<rect x="16" y="28" class="st8" width="12" height="18"/>
+	</g>
+	<g>
+		<rect x="32" y="28" class="st2" width="16" height="2"/>
+	</g>
+	<g>
+		<rect x="32" y="32" class="st2" width="16" height="2"/>
+	</g>
+	<g>
+		<rect x="32" y="36" class="st2" width="16" height="2"/>
+	</g>
+	<g>
+		<rect x="32" y="40" class="st2" width="16" height="2"/>
+	</g>
+	<g>
+		<rect x="32" y="44" class="st2" width="16" height="2"/>
+	</g>
+</g>
+<g id="Layer_2">
+</g>
+</svg>
