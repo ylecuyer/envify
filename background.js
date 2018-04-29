@@ -1,4 +1,5 @@
 browser.runtime.onInstalled.addListener(function() {
+  browser.storage.local.set({"environments": {} })
   browser.runtime.openOptionsPage()
 })
 
