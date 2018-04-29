@@ -1,15 +1,64 @@
-<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <!-- Generator: Adobe Illustrator 19.1.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
-<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 viewBox="0 0 64 64" style="enable-background:new 0 0 64 64;" xml:space="preserve">
-	<defs>
-		<linearGradient id="photonGradient">
-			<stop offset="12%" stop-color="#0a84ff" />
-			<stop offset="42%" stop-color="#9400ff" />
-			<stop offset="88%" stop-color="#ff9400" />
-		</linearGradient>
-	</defs>
-<style type="text/css">
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.1"
+   x="0px"
+   y="0px"
+   viewBox="0 0 64 64"
+   style="enable-background:new 0 0 64 64;"
+   xml:space="preserve"
+   id="svg184"
+   sodipodi:docname="envify.svg"
+   inkscape:version="0.92.2 (5c3e80d, 2017-08-06)"><metadata
+     id="metadata188"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /></cc:Work></rdf:RDF></metadata><sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1920"
+     inkscape:window-height="1022"
+     id="namedview186"
+     showgrid="false"
+     inkscape:zoom="13.109375"
+     inkscape:cx="32"
+     inkscape:cy="32"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg184" /><defs
+     id="defs126"><linearGradient
+       id="photonGradient"
+       gradientTransform="scale(2,0.5)"
+       x1="6"
+       y1="24"
+       x2="26"
+       y2="24"
+       gradientUnits="userSpaceOnUse"><stop
+         offset="12%"
+         stop-color="#0a84ff"
+         id="stop119" /><stop
+         offset="42%"
+         stop-color="#9400ff"
+         id="stop121" /><stop
+         offset="88%"
+         stop-color="#ff9400"
+         id="stop123" /></linearGradient></defs><style
+     type="text/css"
+     id="style128">
 	.st1{opacity:0.2;}
 	.st2{fill:#737373;}
 	.st3{fill:#EEEEEE;}
@@ -18,48 +67,104 @@
 	.st6{fill:#30e60b;}
 	.st7{fill:#ff0039;}
 	.st8{fill:#4F5D73;}
-</style>
-<g id="Layer_1">
-	<g class="st1">
-		<path class="st2" d="M52,48c0,2.2-1.8,4-4,4H16c-2.2,0-4-1.8-4-4V18c0-2.2,1.8-4,4-4h32c2.2,0,4,1.8,4,4V48z"/>
-	</g>
-	<g>
-		<path class="st3" d="M12,21.5V46c0,2.2,1.8,4,4,4h32c2.2,0,4-1.8,4-4V21.5H12z"/>
-	</g>
-	<g class="st1">
-		<path class="st2" d="M52,18c0-2.2-1.8-4-4-4H16c-2.2,0-4,1.8-4,4v6h40V18z"/>
-	</g>
-	<g>
-		<path class="st4" d="M52,16c0-2.2-1.8-4-4-4H16c-2.2,0-4,1.8-4,4v6h40V16z"/>
-	</g>
-	<g>
-		<circle class="st5" cx="23" cy="17" r="2"/>
-	</g>
-	<g>
-		<circle class="st6" cx="29" cy="17" r="2"/>
-	</g>
-	<g>
-		<circle class="st7" cx="17" cy="17" r="2"/>
-	</g>
-	<g>
-		<rect x="16" y="28" class="st8" width="12" height="18"/>
-	</g>
-	<g>
-		<rect x="32" y="28" class="st2" width="16" height="2"/>
-	</g>
-	<g>
-		<rect x="32" y="32" class="st2" width="16" height="2"/>
-	</g>
-	<g>
-		<rect x="32" y="36" class="st2" width="16" height="2"/>
-	</g>
-	<g>
-		<rect x="32" y="40" class="st2" width="16" height="2"/>
-	</g>
-	<g>
-		<rect x="32" y="44" class="st2" width="16" height="2"/>
-	</g>
-</g>
-<g id="Layer_2">
-</g>
-</svg>
+</style><g
+     id="Layer_1"
+     transform="matrix(1.5988081,0,0,1.5988081,-19.161859,-19.161859)"><g
+       class="st1"
+       id="g132"
+       style="opacity:0.2"><path
+         class="st2"
+         d="m 52,48 c 0,2.2 -1.8,4 -4,4 H 16 c -2.2,0 -4,-1.8 -4,-4 V 18 c 0,-2.2 1.8,-4 4,-4 h 32 c 2.2,0 4,1.8 4,4 z"
+         id="path130"
+         inkscape:connector-curvature="0"
+         style="fill:#737373" /></g><g
+       id="g136"><path
+         class="st3"
+         d="M 12,21.5 V 46 c 0,2.2 1.8,4 4,4 h 32 c 2.2,0 4,-1.8 4,-4 V 21.5 Z"
+         id="path134"
+         inkscape:connector-curvature="0"
+         style="fill:#eeeeee" /></g><g
+       class="st1"
+       id="g140"
+       style="opacity:0.2"><path
+         class="st2"
+         d="m 52,18 c 0,-2.2 -1.8,-4 -4,-4 H 16 c -2.2,0 -4,1.8 -4,4 v 6 h 40 z"
+         id="path138"
+         inkscape:connector-curvature="0"
+         style="fill:#737373" /></g><g
+       id="g144"><path
+         class="st4"
+         d="m 52,16 c 0,-2.2 -1.8,-4 -4,-4 H 16 c -2.2,0 -4,1.8 -4,4 v 6 h 40 z"
+         id="path142"
+         style="fill:url(#photonGradient)"
+         inkscape:connector-curvature="0" /></g><g
+       id="g148"><circle
+         class="st5"
+         cx="23"
+         cy="17"
+         r="2"
+         id="circle146"
+         style="fill:#ffe900" /></g><g
+       id="g152"><circle
+         class="st6"
+         cx="29"
+         cy="17"
+         r="2"
+         id="circle150"
+         style="fill:#30e60b" /></g><g
+       id="g156"><circle
+         class="st7"
+         cx="17"
+         cy="17"
+         r="2"
+         id="circle154"
+         style="fill:#ff0039" /></g><g
+       id="g160"><rect
+         x="16"
+         y="28"
+         class="st8"
+         width="12"
+         height="18"
+         id="rect158"
+         style="fill:#4f5d73" /></g><g
+       id="g164"><rect
+         x="32"
+         y="28"
+         class="st2"
+         width="16"
+         height="2"
+         id="rect162"
+         style="fill:#737373" /></g><g
+       id="g168"><rect
+         x="32"
+         y="32"
+         class="st2"
+         width="16"
+         height="2"
+         id="rect166"
+         style="fill:#737373" /></g><g
+       id="g172"><rect
+         x="32"
+         y="36"
+         class="st2"
+         width="16"
+         height="2"
+         id="rect170"
+         style="fill:#737373" /></g><g
+       id="g176"><rect
+         x="32"
+         y="40"
+         class="st2"
+         width="16"
+         height="2"
+         id="rect174"
+         style="fill:#737373" /></g><g
+       id="g180"><rect
+         x="32"
+         y="44"
+         class="st2"
+         width="16"
+         height="2"
+         id="rect178"
+         style="fill:#737373" /></g></g><g
+     id="Layer_2" /></svg>
