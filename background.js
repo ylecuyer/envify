@@ -1,5 +1,5 @@
 browser.runtime.onInstalled.addListener(function() {
-  browser.storage.local.set({"environments": {} })
+  browser.storage.local.set({"environments": { "mozilla": "#ff9400" } })
   browser.runtime.openOptionsPage()
 })
 
@@ -11,10 +11,10 @@ function loadEnv() {
 	.then(function(results){
     env = []
 		let { environments } = results;
-  
+
     if (environments == undefined) {
       return
-    }    
+    }
 
 		Object.keys(environments).map(function(value){
 			env.push( { match: value, color: environments[value] });
@@ -24,7 +24,7 @@ function loadEnv() {
       return a.match.length - b.match.length
     })
 	})
-  
+
 }
 
 loadEnv()
@@ -40,7 +40,7 @@ function getColorFromUrl(url) {
 
   env.forEach(function(env) {
     if (matchRule(url, env.match)) {
-      color = env.color 
+      color = env.color
     }
   })
 
