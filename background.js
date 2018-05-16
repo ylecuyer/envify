@@ -1,5 +1,5 @@
 browser.runtime.onInstalled.addListener(function() {
-	browser.storage.local.set({"environments": { "mozilla": "#ff9400" } })
+	browser.storage.local.set({"environments": { "": "" } })
 	browser.runtime.openOptionsPage()
 })
 
