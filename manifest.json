@@ -3,6 +3,12 @@
   "name": "Envify",
   "version": "0.2",
 
+  "applications": {
+    "gecko": {
+      "id": "envify@ylecuyer.fr"
+    }
+  },
+
   "description": "Colorify tabs with current env",
 
   "icons": {

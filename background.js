@@ -1,5 +1,5 @@
 browser.runtime.onInstalled.addListener(function() {
-	browser.storage.local.set({"environments": { "": "" } })
+	browser.storage.sync.set({"environments": { "": "" } })
 	browser.runtime.openOptionsPage()
 })
 
@@ -7,7 +7,7 @@ var env = []
 
 function loadEnv() {
 
-	browser.storage.local.get("environments")
+	browser.storage.sync.get("environments")
 	.then(function(results){
 		env = []
 		let { environments } = results;

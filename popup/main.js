@@ -44,7 +44,7 @@ let updateEnvironments = function(){
 		}
 		environments[url] = el.querySelector("input[type=color]").value;
 	}
-	browser.storage.local.set({"environments": environments}).catch(function(err){
+	browser.storage.sync.set({"environments": environments}).catch(function(err){
 		btnAddEnv.setCustomValidity("Could not save your environments");
 		btnAddEnv.reportValidity();
 	});
@@ -54,7 +54,7 @@ btnAddEnv.addEventListener("click", function() { addEnvironment() }, false)
 btnSaveEnv.addEventListener("click", updateEnvironments, false)
 
 document.addEventListener("DOMContentLoaded", function(){
-	browser.storage.local.get("environments")
+	browser.storage.sync.get("environments")
 	.then(function(results){
 		let { environments } = results;
 		Object.keys(environments).map(function(value){
