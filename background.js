@@ -1,3 +1,5 @@
+var ff_version = parseInt(window.navigator.userAgent.split('/').pop().split('.')[0], 10);
+
 function loadEnv() {
 
 	browser.storage.sync.get("environments")
@@ -71,16 +73,31 @@ function setTabColor(tab) {
 }
 
 function generateThemeFromColor(color) {
-	return {
-		"images": {
-			"headerURL": ""
-		},
+  // "theme_frame" // >= 70
+  // "frame": colorLuminance(color, -0.3), // >= 70
+  // "tab_background_ext": invertColor(color, true), // >= 70
+	var theme = {
+		"images": { },
 		"colors": {
-			"accentcolor": colorLuminance(color, -0.3),
-			"textcolor": invertColor(color, true),
 			"toolbar": color
 		}
-	}
+	};
+
+  var headerURL = "headerURL";
+  var accentcolor = "accentcolor";
+  var textcolor = "textcolor";
+
+  if (ff_version >= 70) {
+    headerURL = "theme_frame";
+    accentcolor = "frame";
+    textcolor = "tab_background_ext";
+  }
+
+  theme["images"][headerURL] = "";
+  theme["colors"][accentcolor] = colorLuminance(color, -0.3);
+  theme["colors"][textcolor] = invertColor(color, true);
+
+  return theme;
 }
 
 function invertColor(hex, bw) {
