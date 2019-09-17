@@ -85,5 +85,22 @@ document.getElementById('export').addEventListener('click', function() {
 	.then(function(env) {
     download('envify.json', JSON.stringify(env))
   })
+});
 
+document.getElementById('import').addEventListener('click', function() {
+  input = document.getElementById('import_file')
+  file = input.files[0]
+  input.value = ""
+
+  reader = new FileReader();
+
+  reader.onloadend = function(evt) {
+    if (evt.target.readyState == FileReader.DONE) {
+      env = JSON.parse(evt.target.result)
+      browser.storage.sync.set(env);
+      document.location.reload();
+    }
+  }
+
+  reader.readAsText(file);
 });
