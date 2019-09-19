@@ -104,3 +104,12 @@ document.getElementById('import').addEventListener('click', function() {
 
   reader.readAsText(file);
 });
+
+
+
+
+
+const instance = new Tooltip(document.getElementById('help'), {
+    title: "Hey there",
+    trigger: "click",
+});

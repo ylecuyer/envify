@@ -1,3 +1,26 @@
+body {
+  padding: 12px;
+  background-color: #D9E2EC;
+}
+
+.title {
+  text-align: center;
+}
+
+#settings {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
+  padding: 24px;
+  height: 100%;
+}
+
+.help {
+  color: #CCC;
+  font-size: 0.8em;
+}
+
+/*
 html, body {
 	height:  100%;
 	margin: 0;
@@ -60,3 +83,4 @@ input[type="text"] {
 	height: inherit;
 	border:  none;
 }
+*/
