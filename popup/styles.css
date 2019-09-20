@@ -3,21 +3,69 @@ body {
   background-color: #D9E2EC;
 }
 
-.title {
-  text-align: center;
+.container {
+  max-width: 1180px;
 }
 
-#settings {
-  background-color: white;
-  border-radius: 4px;
-  box-shadow: 0 2px 6px 0 hsla(0, 0%, 0%, 0.2);
-  padding: 24px;
-  height: 100%;
+.card {
+  box-shadow: 0 0.25rem 1rem rgba(48,55,66,.15);
+  margin-bottom: 12px;
+}
+
+.title {
+  text-align: center;
 }
 
 .help {
   color: #CCC;
   font-size: 0.8em;
+}
+
+.environment {
+  display: flex;
+  margin-top: 7px;
+}
+
+.environment input[type=color] {
+  height: 36px;
+  width: 48px;
+}
+
+.environment input[type=text] {
+  flex-grow: 1;
+  margin: 0 7px;
+}
+
+#btn-add-env {
+  width: 100%;
+  margin-top: 7px;
+  border-style: dashed;
+}
+
+#import_file {
+  padding: 3px 0;
+}
+
+#preview {
+  position: relative;
+  width: 648px;
+  margin: 0 auto;
+}
+
+#preview-inner {
+  position: absolute;
+  text-align: center;
+  top: 60px;
+  width: 648px;
+  padding: 48px;
+}
+
+#preview-browser {
+  box-shadow: 0 0.25rem 1rem rgba(48,55,66,.15);
+}
+
+#preview-bar {
+  margin: 0 auto;
 }
 
 /*

@@ -7,19 +7,22 @@ let addEnvironment = function(url, color){
 	environmentNode.classList.add("environment");
 
 	let envColor = document.createElement("input");
+  envColor.classList.add("form-input");
 	envColor.type = "color";
 	envColor.value = color || randomDefaultColor();
 	environmentNode.appendChild(envColor);
 	
 	let envDomain = document.createElement("input");
 	envDomain.type = "text";
+  envDomain.classList.add("form-input");
 	envDomain.placeholder = "*.dev.example.com";
 	envDomain.value = url || "";
 	environmentNode.appendChild(envDomain);
 
 	let envRemove = document.createElement("button");
 	envRemove.className = "btn-remove";
-	envRemove.textContent = "Remove";
+  envRemove.classList.add("btn");
+	envRemove.innerHTML = '<i class="far fa-trash-alt"></i>';
 	envRemove.addEventListener("click", () => removeEnvironment(environmentNode), false);
 	environmentNode.appendChild(envRemove);
 
@@ -57,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function(){
 	browser.storage.sync.get("environments")
 	.then(function(results){
 		let { environments } = results;
+    listEnvironments.innerHTML = ''; // remove loading spinner
 		Object.keys(environments).map(function(value){
 			addEnvironment(value, environments[value]);
 		});
@@ -103,13 +107,4 @@ document.getElementById('import').addEventListener('click', function() {
   }
 
   reader.readAsText(file);
-});
-
-
-
-
-
-const instance = new Tooltip(document.getElementById('help'), {
-    title: "Hey there",
-    trigger: "click",
 });
