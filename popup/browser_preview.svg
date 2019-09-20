@@ -35,14 +35,14 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1055"
+     inkscape:window-width="1366"
+     inkscape:window-height="719"
      id="namedview53"
      showgrid="false"
      inkscape:zoom="1.3048477"
-     inkscape:cx="44.760905"
-     inkscape:cy="195.35836"
-     inkscape:window-x="1366"
+     inkscape:cx="343.02322"
+     inkscape:cy="471.25263"
+     inkscape:window-x="0"
      inkscape:window-y="0"
      inkscape:window-maximized="1"
      inkscape:current-layer="svg51">
@@ -124,12 +124,6 @@
      id="path33"
      inkscape:connector-curvature="0"
      style="fill:#ffffff;stroke:#ffffff;stroke-width:1.05939996px;stroke-linecap:round;stroke-linejoin:round" />
-  <circle
-     cx="400.741"
-     cy="23.852861"
-     r="7.5386"
-     id="circle35"
-     style="color:#000000;fill:#ebebeb" />
   <rect
      x="-0.65223908"
      y="35.558857"
