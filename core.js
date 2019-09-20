@@ -2,7 +2,8 @@ function matchRule(str, rule) {
 	return new RegExp(rule.split("*").join(".*")).test(str);
 }
 
-function getColorFromUrl(url) {
+// env [{match: '*.allizom.org', color: '#f00'}]
+function getColorFromUrl(env, url) {
 	var color = null
 
 	env.forEach(function(env) {

@@ -45,7 +45,7 @@ loadEnv()
 
 function setTabColor(tab) {
 	var url = tab.url
-	var color = getColorFromUrl(url)
+	var color = getColorFromUrl(env, url)
 
 	if (color) {
 		browser.theme.update(tab.windowId, generateThemeFromColor(color))
