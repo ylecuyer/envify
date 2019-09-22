@@ -29,6 +29,7 @@
 
   "background": {
     "scripts": [
+      "core.js",
       "background.js"
     ]
   }
