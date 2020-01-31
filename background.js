@@ -25,19 +25,13 @@ function loadEnv() {
 browser.storage.onChanged.addListener(loadEnv)
 
 browser.runtime.onInstalled.addListener(function(details) {
-  if (details['reason'] == "update") {
-    if (details['previousVersion'] == "0.2") {
-      browser.storage.local.get("environments")
-        .then(function(results) {
-          browser.storage.sync.set(results)
-          browser.runtime.openOptionsPage()
-        })
-    }
-  }
-  else {
-    browser.storage.sync.set({"environments": { "": "" } })
-    browser.runtime.openOptionsPage()
-  }
+	browser.storage.sync.get("environments")
+		.then(function(results) {
+			if (!("environments" in results)) {
+				browser.storage.sync.set({"environments": { "": ""} })
+				browser.runtime.openOptionsPage()
+			}
+		})
 })
 
 var env = []
