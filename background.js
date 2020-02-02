@@ -73,7 +73,7 @@ function generateThemeFromColor(color) {
   if (ff_version >= 70) {
     headerURL = "theme_frame";
     accentcolor = "frame";
-    textcolor = "tab_background_ext";
+    textcolor = "tab_background_text";
   }
 
   theme["images"][headerURL] = "";
