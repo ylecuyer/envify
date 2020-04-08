@@ -5,8 +5,6 @@ var ff_version = '';
 async function start() {
   theme_before_envify = await browser.theme.getCurrent();
   ff_version = parseInt(window.navigator.userAgent.split('/').pop().split('.')[0], 10);
-  console.log(theme_before_envify);
-  console.log(ff_version);
   loadEnv()
   setupListeners();
 }
