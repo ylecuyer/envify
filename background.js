@@ -76,6 +76,9 @@ function generateThemeFromColor(color) {
 			"toolbar": color,
 			"frame": colorLuminance(color, -0.3),
 			"tab_background_text": invertColor(color, true)
+		},
+		"properties": {
+			"color_scheme": "system"
 		}
 	};
 
