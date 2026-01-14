@@ -1,3 +1,5 @@
+.PHONY: lint build sign
+
 lint:
 	npx web-ext lint --source-dir=.
 
