@@ -1,8 +1,6 @@
 var env = []
-var theme_before_envify = {}
 
 async function start() {
-  theme_before_envify = await browser.theme.getCurrent();
   loadEnv()
   setupListeners();
 }
@@ -65,7 +63,7 @@ function setTabColor(tab) {
 		browser.theme.update(tab.windowId, generateThemeFromColor(color))
 	}
 	else {
-		browser.theme.update(tab.windowId, theme_before_envify)
+		browser.theme.reset(tab.windowId)
 	}
 }
 
