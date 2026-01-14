@@ -63,7 +63,7 @@ function setTabColor(tab) {
 		browser.theme.update(tab.windowId, generateThemeFromColor(color))
 	}
 	else {
-    browser.theme.reset(tab.windowId)
+		browser.theme.reset(tab.windowId)
 	}
 }
 
