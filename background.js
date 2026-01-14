@@ -1,10 +1,8 @@
 var env = []
 var theme_before_envify = {}
-var ff_version = '';
 
 async function start() {
   theme_before_envify = await browser.theme.getCurrent();
-  ff_version = parseInt(window.navigator.userAgent.split('/').pop().split('.')[0], 10);
   loadEnv()
   setupListeners();
 }
@@ -72,29 +70,16 @@ function setTabColor(tab) {
 }
 
 function generateThemeFromColor(color) {
-  // "theme_frame" // >= 70
-  // "frame": colorLuminance(color, -0.3), // >= 70
-  // "tab_background_ext": invertColor(color, true), // >= 70
 	var theme = {
-		"images": { },
+		"images": { 
+			"theme_frame": ""
+		},
 		"colors": {
-			"toolbar": color
+			"toolbar": color,
+			"frame": colorLuminance(color, -0.3),
+			"tab_background_text": invertColor(color, true)
 		}
 	};
-
-  var headerURL = "headerURL";
-  var accentcolor = "accentcolor";
-  var textcolor = "textcolor";
-
-  if (ff_version >= 70) {
-    headerURL = "theme_frame";
-    accentcolor = "frame";
-    textcolor = "tab_background_text";
-  }
-
-  theme["images"][headerURL] = "";
-  theme["colors"][accentcolor] = colorLuminance(color, -0.3);
-  theme["colors"][textcolor] = invertColor(color, true);
 
   return theme;
 }
